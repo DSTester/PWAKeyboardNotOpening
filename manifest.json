@@ -1,11 +1,11 @@
 {
   "name": "Keyboard not opening, Bug in installed PWA",
   "short_name": "v18 Opening Bug PWA Webkit",
-  "scope": "https://testapp.duschservice-online.de/",
-  "start_url": "https://testapp.duschservice-online.de/index.html",
+  "scope": "https://dstester.github.io/PWAKeyboardNotOpening/",
+  "start_url": "https://dstester.github.io/PWAKeyboardNotOpening/index.html",
   "background_color": "#FFDCB5",
   "theme_color": "#1E003D",
   "display": "standalone",
   "orientation": "any",
-  "id": "https://testapp.duschservice-online.de/"
+  "id": "https://dstester.github.io/PWAKeyboardNotOpening/"
 }
