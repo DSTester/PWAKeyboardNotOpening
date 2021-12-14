@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PWA keyboard not opening bug</title>
+    <link rel="manifest" href="manifest.json" type="application/manifest+json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1E003D">
+    <meta name="x5-page-mode" content="app">
+    <meta name="browsermode" content="application">
+</head>
+<body>
+<div>
+    <div>
+        <p>
+            <button>Remove Focus from Input (no JS) / v15</button>
+        </p>
+        <form>
+            <input type="text">
+        </form>
+    </div>
+    <div>
+        <span style="font-size: larger" >visualViewport.width: <span id="width">Not available</span></span><br/>
+        <span style="background-color: orangered; font-size: larger" >visualViewport.height: <span id="height">Not available</span></span><br/>
+    </div>
+</div>
+<script>
+    if(window.visualViewport!==undefined) {
+        window.setInterval(function () {
+            document.getElementById('width').innerHTML = window.visualViewport.width;
+            document.getElementById('height').innerHTML = window.visualViewport.height;
+        }, 100);
+    }
+</script>
+</body>
+</html>
