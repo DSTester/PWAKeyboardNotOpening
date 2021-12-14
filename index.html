@@ -13,7 +13,7 @@
 <div>
     <div>
         <p>
-            <button>Remove Focus from Input (no JS) / v15</button>
+            <button>Remove Focus from Input (no JS) (v16)</button>
         </p>
         <form>
             <input type="text">
@@ -22,6 +22,7 @@
     <div>
         <span style="font-size: larger" >visualViewport.width: <span id="width">Not available</span></span><br/>
         <span style="background-color: orangered; font-size: larger" >visualViewport.height: <span id="height">Not available</span></span><br/>
+        <span>Useragent: <span id="useragent">Not available</span></span><br/>
     </div>
 </div>
 <script>
@@ -31,6 +32,7 @@
             document.getElementById('height').innerHTML = window.visualViewport.height;
         }, 100);
     }
+    document.getElementById('useragent').innerHTML = window.navigator.userAgent;
 </script>
 </body>
 </html>
